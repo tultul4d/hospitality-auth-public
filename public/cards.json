@@ -1,0 +1,83 @@
+{
+    "estate": [
+      {
+        "id": 1,
+        "estate_title": "Luxurious Beachfront Villa",
+        "segment_name": "Hotels",
+        "price": "$1,500,000",
+        "status": "sale",
+        "location": "Malibu, California",
+        "area": "5000 sq ft",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
+        "description": "Experience ultimate luxury in this stunning beachfront villa.",
+        "image": "https://example.com/beachfront_villa.jpg",
+        "button": "View Property"
+      },
+      {
+        "id": 2,
+        "estate_title": "Cozy Mountain Cabin",
+        "segment_name": " motels",
+        "price": "$500/night",
+        "status": "rent",
+        "location": "Aspen, Colorado",
+        "area": "1500 sq ft",
+        "facilities": ["Living Room", "Kitchen"],
+        "description": "Escape to the mountains in this charming cabin retreat.",
+        "image": "https://example.com/mountain_cabin.jpg",
+        "button": "View Property"
+      },
+      {
+        "id": 3,
+        "estate_title": "City Center Penthouse",
+        "segment_name": "resorts",
+        "price": "$3,000/month",
+        "status": "rent",
+        "location": "New York City, New York",
+        "area": "2000 sq ft",
+        "facilities": ["Living Room", "Kitchen"],
+        "description": "Live in luxury in the heart of the city with breathtaking views.",
+        "image": "https://example.com/city_penthouse.jpg",
+        "button": "View Property"
+      },
+      {
+        "id": 4,
+        "estate_title": "Seaside Resort Condo",
+        "segment_name": " vacation rentals",
+        "price": "$700,000",
+        "status": "sale",
+        "location": "Miami Beach, Florida",
+        "area": "1800 sq ft",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
+        "description": "Own a piece of paradise in this luxurious seaside condo.",
+        "image": "https://example.com/seaside_condo.jpg",
+        "button": "View Property"
+      },
+      {
+        "id": 5,
+        "estate_title": "Rustic Country Estate",
+        "segment_name": "Lodges",
+        "price": "$2,200,000",
+        "status": "sale",
+        "location": "Napa Valley, California",
+        "area": "7000 sq ft",
+        "facilities": ["Living Room", "Kitchen", "Garden"],
+        "description": "Embrace country living in this spacious rustic estate surrounded by vineyards.",
+        "image": "https://example.com/country_estate.jpg",
+        "button": "View Property"
+      },
+      {
+        "id": 6,
+        "estate_title": "Modern Downtown Apartment",
+        "segment_name": "Guesthouses",
+        "price": "$1,200/month",
+        "status": "rent",
+        "location": "Chicago, Illinois",
+        "area": "1000 sq ft",
+        "facilities": ["Living Room", "Kitchen"],
+        "description": "Experience urban living at its finest in this sleek downtown apartment.",
+        "image": "https://example.com/downtown_apartment.jpg",
+        "button": "View Property"
+      }
+    ]
+  }
+  
