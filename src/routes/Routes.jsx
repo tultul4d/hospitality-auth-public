@@ -23,7 +23,8 @@ import PrivateRoute from "./PrivateRoute";
             },
             {
                 path: '/cards/:id',
-                 element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute> 
+                 element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
+                 loader: () => fetch('../cards.json') 
             },
             {
                 path: '/login',
