@@ -2,6 +2,8 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Card from "./Card/Card";
 import Slider from "./Slider";
+import Estates from "./Estates/Estates";
+
 
 
 
@@ -14,10 +16,13 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Card></Card>
-            <Slider></Slider>
             <div>
-           
+                {
+                    cards.estate.map(card => <Estates key={cards.id} cards={card}></Estates>)
+                }
             </div>
+            <Slider></Slider>
+            
             
            
              
