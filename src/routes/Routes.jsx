@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Estates from "../pages/Home/Estates/Estates";
+import EstateDetails from "../pages/EstateDetails";
 
   const routes = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ import Estates from "../pages/Home/Estates/Estates";
             {
                 path: '/estates',
                 element: <Estates></Estates>
+            },
+            {
+                path: '/cards/:id',
+                 element: <EstateDetails></EstateDetails> 
             },
             {
                 path: '/login',

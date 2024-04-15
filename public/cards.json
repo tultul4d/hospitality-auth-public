@@ -10,7 +10,7 @@
         "area": "5000 sq ft",
         "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
         "description": "Experience ultimate luxury in this stunning beachfront villa.",
-        "image": "https://example.com/beachfront_villa.jpg",
+        "image": "https://i.ibb.co/Fmg7y46/large-office-buildings.jpg",
         "button": "View Property"
       },
       {
@@ -23,7 +23,7 @@
         "area": "1500 sq ft",
         "facilities": ["Living Room", "Kitchen"],
         "description": "Escape to the mountains in this charming cabin retreat.",
-        "image": "https://example.com/mountain_cabin.jpg",
+        "image": "https://i.ibb.co/PxYD4dz/relax-area-resort.jpg",
         "button": "View Property"
       },
       {
@@ -36,7 +36,7 @@
         "area": "2000 sq ft",
         "facilities": ["Living Room", "Kitchen"],
         "description": "Live in luxury in the heart of the city with breathtaking views.",
-        "image": "https://example.com/city_penthouse.jpg",
+        "image": "https://i.ibb.co/C7jWgx5/view-island-middle-lake.jpg",
         "button": "View Property"
       },
       {
@@ -49,7 +49,7 @@
         "area": "1800 sq ft",
         "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
         "description": "Own a piece of paradise in this luxurious seaside condo.",
-        "image": "https://example.com/seaside_condo.jpg",
+        "image": "https://i.ibb.co/r7t6C7v/beautiful-outdoor-patio-with-chair-table.jpg",
         "button": "View Property"
       },
       {
@@ -62,7 +62,7 @@
         "area": "7000 sq ft",
         "facilities": ["Living Room", "Kitchen", "Garden"],
         "description": "Embrace country living in this spacious rustic estate surrounded by vineyards.",
-        "image": "https://example.com/country_estate.jpg",
+        "image": "https://i.ibb.co/0msnwnK/remote-accomadtion.jpg",
         "button": "View Property"
       },
       {
@@ -75,7 +75,7 @@
         "area": "1000 sq ft",
         "facilities": ["Living Room", "Kitchen"],
         "description": "Experience urban living at its finest in this sleek downtown apartment.",
-        "image": "https://example.com/downtown_apartment.jpg",
+        "image": "https://i.ibb.co/sb6jXVP/thatch-roof-house.jpg",
         "button": "View Property"
       }
     ]
