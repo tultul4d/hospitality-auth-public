@@ -6,15 +6,18 @@ import Register from "../pages/Register/Register";
 import Estates from "../pages/Home/Estates/Estates";
 import EstateDetails from "../pages/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPages from "../pages/ErrorPages";
 
   const routes = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPages></ErrorPages>,
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
+                
                 loader: () => fetch('/cards.json')
             },
             {

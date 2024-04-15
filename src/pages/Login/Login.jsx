@@ -4,7 +4,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 
 
 const Login = () => {
-  const {singIn} = useContext(AuthContext);
+  const {singIn, googleLogin, github} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate(); 
   console.log(location)
@@ -31,6 +31,15 @@ const Login = () => {
           console.error(error);
         })
 
+    }
+    const handleGoogleLogin = () =>{
+      googleLogin()
+      .then(result => console.log(result.user))
+    }
+    const handleGitHub = () =>{
+        github()
+        .then(result => console.log(result.user))
+        
     }
     return (
         <div>
@@ -63,6 +72,8 @@ const Login = () => {
 
         </div>
       </form>
+      <button onClick={handleGoogleLogin} className="btn btn-secondary">Google Login</button>
+      <button onClick={handleGitHub} className="btn btn-primary">GitHub</button>
       <p className="text-center mt-4">Do not have an account<Link to="/register">Register</Link></p>
     </div>
   </div>

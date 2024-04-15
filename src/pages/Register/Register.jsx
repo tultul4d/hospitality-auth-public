@@ -1,11 +1,15 @@
 // import { get } from "firebase/database";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
 import { AuthContext } from "../../providers/AuthProviders";
 
 
 const Register = () => {
   const {createUser } = useContext(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("")
     const handleRegister = e =>{
         console.log(e.currentTarget);
         e.preventDefault();
@@ -14,6 +18,21 @@ const Register = () => {
         const password = form.get('password');
         const name = form.get('name');
         const photo = form.get('photo')
+
+
+        if(password.length<6){
+          setError("password must be 6 characters")
+          return
+        }
+
+        if(!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)){
+          setError("Password must be added uppercase and lowercase")
+          return
+        }
+
+      
+        
+        setError('')
 
         console.log(email, password, name, photo);
 
@@ -60,7 +79,12 @@ const Register = () => {
       <label className="label">
         <span className="label-text">Password</span>
       </label>
-      <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+      <input type={ showPassword ? "text" : "password"} name="password" placeholder="Type here" className="input input-bordered w-full " />
+                    <span className="absolute top-[365px] right-12" onClick={() => setShowPassword(!showPassword)}>{ showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                    </span>
+      {
+        error && <small className="text-red-500">{error}</small>
+      }
       <label className="label">
         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
       </label>
