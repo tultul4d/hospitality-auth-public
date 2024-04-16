@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Card from "./Card/Card";
 import Slider from "./Slider";
 import Estates from "./Estates/Estates";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -14,6 +15,11 @@ const Home = () => {
     console.log(cards)
     return (
         <div>
+            <Helmet>
+                <title>
+                    Career Hub | Home
+                </title>
+            </Helmet>
             <Banner></Banner>
             <Card></Card>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-5">

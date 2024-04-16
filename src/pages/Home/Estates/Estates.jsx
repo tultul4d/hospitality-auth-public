@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 
@@ -6,6 +7,11 @@ const Estates = ({cards}) => {
     return (
         
         <div className="">
+          <Helmet>
+            <title>
+              Card
+            </title>
+          </Helmet>
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src={image} alt="Shoes" className="rounded-xl" />
