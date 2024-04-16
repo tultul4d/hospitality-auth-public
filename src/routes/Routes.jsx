@@ -7,6 +7,7 @@ import Estates from "../pages/Home/Estates/Estates";
 import EstateDetails from "../pages/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPages from "../pages/ErrorPages";
+import Animation from "../pages/Animation";
 
   const routes = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ import ErrorPages from "../pages/ErrorPages";
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/animation',
+                element: <Animation></Animation>
             }
         ]
     }
