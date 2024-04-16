@@ -16,7 +16,7 @@
       {
         "id": 2,
         "estate_title": "Cozy Mountain Cabin",
-        "segment_name": " motels",
+        "segment_name": " Motels",
         "price": "$500/night",
         "status": "rent",
         "location": "Aspen, Colorado",
@@ -29,7 +29,7 @@
       {
         "id": 3,
         "estate_title": "City Center Penthouse",
-        "segment_name": "resorts",
+        "segment_name": "Resorts",
         "price": "$3,000/month",
         "status": "rent",
         "location": "New York City, New York",
@@ -42,7 +42,7 @@
       {
         "id": 4,
         "estate_title": "Seaside Resort Condo",
-        "segment_name": " vacation rentals",
+        "segment_name": " Vacation Rentals",
         "price": "$700,000",
         "status": "sale",
         "location": "Miami Beach, Florida",

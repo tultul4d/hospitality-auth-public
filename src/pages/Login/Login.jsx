@@ -4,6 +4,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
 
 
+
 const Login = () => {
   const {singIn, googleLogin, github} = useContext(AuthContext);
   const location = useLocation();
@@ -49,7 +50,7 @@ const Login = () => {
               Login 
             </title>
           </Helmet>
-            <h2 className="text-center">this is Login</h2>
+            {/* <h2 className="text-center">this is Login</h2> */}
             <div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
   <div className="hero-content flex-col">
     <div className="text-center lg:text-left">
@@ -74,13 +75,18 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn bg-violet-300">Login</button>
 
         </div>
       </form>
-      <button onClick={handleGoogleLogin} className="btn btn-secondary">Google Login</button>
-      <button onClick={handleGitHub} className="btn btn-primary">GitHub</button>
-      <p className="text-center mt-4">Do not have an account<Link to="/register">Register</Link></p>
+      <div className="flex gap-10">
+      <div className="ml-7">
+        
+        <button onClick={handleGoogleLogin} className="btn bg-purple-200 ">Google Login</button>
+      </div>
+      <button onClick={handleGitHub} className="btn bg-purple-200 ">GitHub</button>
+      </div>
+      <p className="text-center mt-3">Do not have an account?<Link to="/register" className="text-blue-500 ml-6">Register</Link></p>
     </div>
   </div>
 </div>

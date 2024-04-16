@@ -2,7 +2,7 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
 
@@ -53,7 +53,7 @@ const Register = () => {
               Register
             </title>
           </Helmet>
-        <h2 className="text-center">this is Login</h2>
+        {/* <h2 className="text-center">this is Login</h2> */}
         <div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
 <div className="hero-content flex-col">
 <div className="text-center lg:text-left">
@@ -96,11 +96,11 @@ const Register = () => {
       </label>
     </div>
     <div className="form-control mt-6">
-      <button className="btn btn-primary">Login</button>
+      <button className="btn bg-violet-300">Login</button>
 
     </div>
   </form>
-  <p className="text-center mt-4">Already have an account? <Link to="/login">Login</Link></p>
+  <p className="text-center mt-4">Already have an account? <Link to="/login" className="text-blue-500 ml-6">Login</Link></p>
 </div>
 </div>
 </div>
