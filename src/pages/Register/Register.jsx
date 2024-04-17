@@ -69,7 +69,7 @@ const Register = () => {
             </title>
           </Helmet>
         {/* <h2 className="text-center">this is Login</h2> */}
-        <div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
+        <div className="hero rounded-xl mb-9 min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
 <div className="hero-content flex-col">
 <div className="text-center lg:text-left">
   <h1 className="text-5xl font-bold">Register now!</h1>

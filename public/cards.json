@@ -8,7 +8,7 @@
         "status": "sale",
         "location": "Malibu, California",
         "area": "5000 sq ft",
-        "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
+        "facilities": ["Living Room", "Swimming Pool"],
         "description": "Experience ultimate luxury in this stunning beachfront villa.",
         "image": "https://i.ibb.co/Fmg7y46/large-office-buildings.jpg",
         "button": "View Property"
@@ -21,7 +21,7 @@
         "status": "rent",
         "location": "Aspen, Colorado",
         "area": "1500 sq ft",
-        "facilities": ["Living Room", "Kitchen"],
+        "facilities": ["Swimming Pool", "Kitchen"],
         "description": "Escape to the mountains in this charming cabin retreat.",
         "image": "https://i.ibb.co/PxYD4dz/relax-area-resort.jpg",
         "button": "View Property"

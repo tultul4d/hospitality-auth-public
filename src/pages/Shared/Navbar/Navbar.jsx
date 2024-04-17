@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <div tabIndex={0} role="button" className="btn btn-circle m-1"><div className="w-10 rounded-full">
                                 <img className="rounded-full" alt="" src={user?.photoURL} />
                             </div></div>
-                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box lg:w-36 w-20 -ml-10">
                                     <li><a>{user?.displayName}</a></li>
                                 </ul>
                             </div>

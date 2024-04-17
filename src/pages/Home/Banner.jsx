@@ -1,9 +1,14 @@
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/css';
 
+import { Helmet } from "react-helmet-async";
+
 const Banner = () => {
     return (
         <div>
+          <Helmet>
+            <title>Home</title>
+          </Helmet>
            <div className="carousel 
              lg:w-full lg:h-[400px] md:h-[300px] lg:ml-0 md:ml-0 ml-10  rounded-lg">
           

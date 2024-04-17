@@ -1,9 +1,16 @@
+import { Helmet } from "react-helmet-async";
 
 
 const UpdateProfile = () => {
     return (
-        <div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
+
+<div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
+<Helmet>
+        <title>UpDateProfile</title>
+      </Helmet>
 <div className="hero-content flex-col">
+
+
 <div className="text-center lg:text-left">
   <h1 className="text-5xl font-bold">Update Your Profile</h1>
   

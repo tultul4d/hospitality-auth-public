@@ -42,7 +42,16 @@ const EstateDetails = () => {
       <div className="ml-5"><h2 className="text-slate-600"><span className="font-medium text-purple-600">Area:</span>{card.area}</h2></div>
       <h2 className="ml-5 text-slate-600 "><span className="font-medium text-purple-600">For:</span>{card.status}</h2>
       <h2 className="ml-5 text-slate-600"><span className="font-medium text-purple-600">Price:</span>{card.price}</h2>
+      
     </div>
+    <span className=' font-medium text-purple-600 ml-2 '>
+       Facilities: 
+        </span>
+        <p className="text-slate-600">
+            {
+                card.facilities.map(c => <li>{c}</li>)
+            }
+        </p>
     
   </div>
 </div>

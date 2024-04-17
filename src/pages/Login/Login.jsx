@@ -55,13 +55,13 @@ const Login = () => {
             </title>
           </Helmet>
             {/* <h2 className="text-center">this is Login</h2> */}
-            <div className="hero min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
-  <div className="hero-content flex-col">
+            <div className="hero rounded-xl mb-8 min-h-screen lg:w-1/2 md:w-3/4 bg-base-200 mx-auto">
+  <div className="hero-content flex-col rounded-lg">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Login now!</h1>
       
     </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card shrink-0 w-full max-w-sm shadow-2xl rounded-lg bg-base-100">
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
           <label className="label">
