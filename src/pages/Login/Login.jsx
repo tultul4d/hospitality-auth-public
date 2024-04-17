@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -30,7 +32,8 @@ const Login = () => {
           navigate(location?.state ? location.state : '/' );
         })
         .catch(error =>{
-          console.error(error);
+          console.error(error.message);
+          toast.error(error.message);
         })
 
     }
@@ -91,6 +94,7 @@ const Login = () => {
     </div>
   </div>
 </div>
+<ToastContainer />
         </div>
     );
 };

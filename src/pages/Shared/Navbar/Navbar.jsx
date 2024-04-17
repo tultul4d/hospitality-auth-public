@@ -12,9 +12,18 @@ const Navbar = () => {
     }
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="login">Login</NavLink></li>
         <li><NavLink to="/animation">About Us</NavLink></li>
-        <li><NavLink to="/user">UserProfile</NavLink></li>
+        {/* <li><NavLink to="login">Login</NavLink></li> */}
+        {
+            user ?
+                <>
+                    <li><NavLink to="/profile">Update Profile</NavLink></li>
+
+                    <li><NavLink to="/user">UserProfile</NavLink></li>
+                </>
+                :
+                <></>
+        }
     </>
     return (
         <div className="navbar bg-base-100">
@@ -34,19 +43,28 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
+            <div className="navbar-end">
+                {
+                    user ?
+                        <>
+                            <button onClick={handleSingOut}>Log Out</button>
+                            {/* <div className="w-10 rounded-full">
+                                <img alt="" src={user?.photoURL} />
+                            </div> */}
+                            <div className="dropdown dropdown-hover">
+                                <div tabIndex={0} role="button" className="btn btn-circle m-1"><div className="w-10 rounded-full">
+                                <img className="rounded-full" alt="" src={user?.photoURL} />
+                            </div></div>
+                                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><a>{user?.displayName}</a></li>
+                                </ul>
+                            </div>
+                        </>
+                        :
+                        <Link to="/login" ><button>Login</button></Link>
 
-            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
-                    <img alt="" src={user?.photoURL}/>
-                </div>
+                }
             </div>
-            {
-                user ?
-                    <button onClick={handleSingOut}>Log Out</button>
-                    :
-                    <Link to="/login" ><button>Login</button></Link>
-
-            }
 
 
         </div>

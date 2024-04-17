@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPages from "../pages/ErrorPages";
 import Animation from "../pages/Animation";
 import UserProfile from "../pages/UserProfile/UserProfile";
+import UpdateProfile from "../pages/UpdateProfile";
 
   const routes = createBrowserRouter([
     {
@@ -46,6 +47,10 @@ import UserProfile from "../pages/UserProfile/UserProfile";
             {
                 path: '/user',
                 element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+            },
+            {
+                path: '/profile',
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             }
         ]
     }
