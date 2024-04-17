@@ -36,7 +36,8 @@ const Login = () => {
     }
     const handleGoogleLogin = () =>{
       googleLogin()
-      .then(result => console.log(result.user))
+      .then(result =>    navigate(location?.state ? location.state : '/' ))
+      
     }
     const handleGitHub = () =>{
         github()

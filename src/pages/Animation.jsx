@@ -7,6 +7,7 @@ import { GoGift } from "react-icons/go";
 import { TiSocialSkypeOutline } from "react-icons/ti";
 import { RiHotelLine } from "react-icons/ri";
 import 'animate.css';
+import { Helmet } from 'react-helmet-async';
 
 const Animation = () => {
     <head>
@@ -21,6 +22,11 @@ const Animation = () => {
     }, [])
     return (
         <div className=' flex-column align-items-center  p-5' >
+             <Helmet>
+            <title>
+             About
+            </title>
+          </Helmet>
             <div className="card lg:w-96 md:w-1.52 bg-gray-200 shadow-xl lg:ml-96" data-aos="fade-left">
                 <div className="card-body">
                 <h1 class="animate__animated animate__bounce card-title">Welcome to <span className='text-purple-400 font-mono'>Dream Hotel</span> </h1>

@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div>
            <div className="carousel 
-             lg:w-full lg:h-[400px] md:h-[300px]  rounded-lg">
+             lg:w-full lg:h-[400px] md:h-[300px] lg:ml-0 md:ml-0 ml-10  rounded-lg">
           
   <div id="item1" className="carousel-item w-full ">
   

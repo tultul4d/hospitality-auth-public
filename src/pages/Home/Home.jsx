@@ -5,6 +5,7 @@ import Slider from "./Slider";
 import Estates from "./Estates/Estates";
 import { Helmet } from "react-helmet-async";
 import SliderBanner from "./SliderBanner";
+import SliderTitle from "./SliderTitle";
 
 
 
@@ -18,17 +19,19 @@ const Home = () => {
         <div>
             <Helmet>
                 <title>
-                    Career Hub | Home
+                    Dream Hotel | Home
                 </title>
             </Helmet>
-            <SliderBanner></SliderBanner>
-            {/* <Banner></Banner> */}
+        
+            <Banner></Banner>
             <Card></Card>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-5">
                 {
                     cards.estate.map(card => <Estates key={cards.id} cards={card}></Estates>)
                 }
             </div>
+            <SliderTitle></SliderTitle>
+            <SliderBanner></SliderBanner>
             <Slider></Slider>
             
             

@@ -8,6 +8,7 @@ import EstateDetails from "../pages/EstateDetails";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPages from "../pages/ErrorPages";
 import Animation from "../pages/Animation";
+import UserProfile from "../pages/UserProfile/UserProfile";
 
   const routes = createBrowserRouter([
     {
@@ -40,7 +41,11 @@ import Animation from "../pages/Animation";
             },
             {
                 path: '/animation',
-                element: <Animation></Animation>
+                element: <PrivateRoute><Animation></Animation></PrivateRoute>
+            },
+            {
+                path: '/user',
+                element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
             }
         ]
     }

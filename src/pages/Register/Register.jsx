@@ -2,7 +2,8 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-// import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet-async";
 
@@ -22,15 +23,15 @@ const Register = () => {
 
 
         if(password.length<6){
-          setError("password must be 6 characters")
+          toast.warn("password must be 6 characters")
           return
         }
 
         if(!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)){
-          setError("Password must be added uppercase and lowercase")
+          toast.warn("Password must be added uppercase and lowercase")
           return
         }
-
+        
       
         
         setError('')
@@ -44,6 +45,7 @@ const Register = () => {
         .catch(error => {
           console.error(error)
         })
+        toast.success('User Created Successfully');
     }
     
     return (
@@ -104,6 +106,7 @@ const Register = () => {
 </div>
 </div>
 </div>
+<ToastContainer />
     </div>
     );
 };
