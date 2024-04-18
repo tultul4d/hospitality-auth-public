@@ -14,7 +14,7 @@ const Estates = ({cards}) => {
               Card
             </title>
           </Helmet> */}
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card lg:w-96 w-full bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src={image} alt="Shoes" className="rounded-xl" />
   </figure>
